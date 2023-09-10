@@ -7,7 +7,7 @@ interface GoogleSignInButtonProps {
 }
 const GoogleSignInButton: FC<GoogleSignInButtonProps> = ({ children }) => {
   const loginWithGoogle = () => signIn('google', {
-    callbackUrl: "http://localhost:3000/admin"
+    callbackUrl: "https://front-7.vercel.app/admin"
   });
 
   return (
